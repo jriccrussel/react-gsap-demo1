@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap");
 @import "varibles";
 @import "breakpoints";
+@import "components/navigation";
 @import "components/header";
 @import "components/banner";
 @import "components/cases";
@@ -130,5 +131,22 @@ body, html {
         }
       }
     }
+  }
+}
+
+.App{
+  z-index: 2;
+  transform: translateY(0);
+  position: relative;
+}
+
+.page{
+  height: 100vh;
+  width: 100%;
+  background: $white;
+
+  .row{
+    display: flex;
+    align-items: center;
   }
 }

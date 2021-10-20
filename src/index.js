@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // import './index.css'
 import App from './App'
+import {AppProvider} from './context'
 import { BrowserRouter as Router } from "react-router-dom"
 import * as serviceWorker from "./serviceWorker"
 import reportWebVitals from './reportWebVitals'
@@ -11,7 +12,14 @@ ReactDOM.render(
     {/* <Router>
       <App /> 
     </Router> */}
-    <App />
+
+    <AppProvider>
+      <Router>
+        <App />
+      </Router>
+    </AppProvider>
+
+    {/* <App /> */}
   </React.StrictMode>,
   document.getElementById('root')
 )
