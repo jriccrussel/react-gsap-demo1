@@ -58,8 +58,8 @@ const Home = () => {
 
     // Animation
     // prevents flashing
-    gsap.to("body", 0, { css: { visibility: "visible" } })
-
+    // gsap.to("body", 0, { css: { visibility: "visible" } })
+    preventFlashing()
       
     // gsap timeline
     const tl = gsap.timeline()
