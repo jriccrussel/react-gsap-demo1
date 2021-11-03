@@ -25,18 +25,15 @@ const routes = [
   { path: "/about-us", name: "About", Component: About },
 ]
 
-// dimension duratipn
-// const debounce = (fn, ms) => {
+// function debounce(fn, ms) {
 //   let timer
-
 //   return () => {
-//     clearTimeout(timer)
-
+//     clearTimeout(timer);
 //     timer = setTimeout(() => {
 //       timer = null
 //       fn.apply(this, arguments)
 //     }, ms)
-//   }
+//   };
 // }
 
 
@@ -108,12 +105,13 @@ function App() {
     //   setDimensions({
     //     height: window.innerHeight,
     //     width: window.innerWidth
-    //   });
+    //   })
     // }, 1000)
 
-    // window.addEventListener("resize", debouncedHandleResize);
+    // window.addEventListener("resize", debouncedHandleResize)
+
     // return () => {
-    //   window.removeEventListener("resize", debouncedHandleResize);
+    //   window.removeEventListener("resize", debouncedHandleResize)
     // }
 
   }, [])
